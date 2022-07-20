@@ -1,0 +1,27 @@
+
+To run project 
+____________________
+npm run watch
+
+To set node env in Linux
+________________________
+export NODE_ENV=local
+
+Run Seeder 
+____________________
+npx sequelize-cli db:seed:all  
+npx sequelize-cli db:seed --seed <seed-file-name>
+
+Create Migration
+____________________
+npx sequelize-cli migration:generate --name <name>
+
+
+Run Migrations
+____________________
+npx sequelize-cli db:migrate
+
+
+to make gmail accoutn able to send mail via node backend
+________________________________________________________
+https://myaccount.google.com/lesssecureapps

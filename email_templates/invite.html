@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <style>
+    body {
+      padding: 50px;
+      display: flex;
+      flex-flow: wrap;
+      font-family: "Ubuntu", sans-serif;
+    }
+
+    body * {
+      box-sizing: border-box;
+    }
+
+    .card-container {
+      flex: 300px;
+      margin: 30px;
+    }
+
+    .card-container .card {
+      font-weight: bold;
+      position: relative;
+      width: 100%;
+    }
+
+    .card-container .card {
+      padding: 40px;
+      width: max-content;
+      height: fit-content;
+      border: 2px dashed black;
+      background: rgb(255, 255, 255);
+      text-decoration: none;
+      color: black;
+      display: block;
+      transition: 0.25s ease;
+    }
+
+    .button {
+      border-radius: 4px;
+      background-color: #172ce7;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 18px;
+      padding: 10px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin-top: 40px;
+    }
+
+    .button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    .button span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+
+    .button:hover span {
+      padding-right: 25px;
+    }
+
+    .button:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card-container">
+    <p>Welcom To ,
+    <h2> {{clientName}} </h2>
+    </p>
+    <div class="card">
+      <div class="card--display">
+        <h2>Hii , {{userName}} </h2>
+        <p class="card-text">
+          Dear {{user}} click on the button and verify our email then create a
+          password to continue in our website
+        </p>
+        <a href="{{link}}">
+          <button class="button"><span>Let's Go</span></button>
+        </a>
+      </div>
+    </div>
+    <p>
+      {{address}}
+    </p>
+  </div>
+</body>
+
+</html>

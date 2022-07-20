@@ -1,0 +1,42 @@
+{
+  "test": {
+    "username": "root",
+    "port": 3306,
+    "password": null,
+    "database": "ca_backend",
+    "host": "localhost",
+    "dialect": "mysql",
+    "logging": true,
+    "migrationStorageTableName": "sequelize_meta"
+  },
+  "local": {
+    "username": "bhavinnt_root",
+    "port": 3306,
+    "password": "997acHrFnsfp@32",
+    "database": "bhavinnt_ca_web_dev",
+    "host": "localhost",
+    "dialect": "mysql",
+    "logging": false,
+    "migrationStorageTableName": "sequelize_meta"
+  },
+  "production": {
+    "username": "bhavinnt_root",
+    "port": 3306,
+    "password": "997acHrFnsfp@32",
+    "database": "bhavinnt_ca_web_dev",
+    "host": "localhost",
+    "dialect": "mysql",
+    "logging": false,
+    "migrationStorageTableName": "sequelize_meta"
+  },
+  "development": {
+    "username": "bhavinnt_root",
+    "port": 3306,
+    "password": "997acHrFnsfp@32",
+    "database": "bhavinnt_ca_web_dev",
+    "host": "localhost",
+    "dialect": "mysql",
+    "logging": false,
+    "migrationStorageTableName": "sequelize_meta"
+  }
+}
